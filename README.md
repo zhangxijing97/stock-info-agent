@@ -1,8 +1,6 @@
 # stock-info-agent
 
-This project is a sample implementation of a **multi-tool AI agent** built with the [Google Agent Development Kit (ADK)](https://github.com/google/adk). It provides real-time stock information using [Yahoo Finance](https://www.yahoofinance.com/) data via the `yfinance` Python library.
-
----
+This project is a sample implementation of a **multi-tool AI agent** built with the [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/). It provides real-time stock information using [Yahoo Finance](https://pypi.org/project/yahoo-finance/) data via the `yfinance` Python library.
 
 ## 🚀 Features
 
@@ -11,8 +9,6 @@ This project is a sample implementation of a **multi-tool AI agent** built with 
 - Keeps a simple record of recent ticker lookups (in-memory)
 - Modular tool design with separate tool files
 - ADK-powered agent using `gemini-2.0-flash` LLM model
-
----
 
 ## 🧱 Project Structure
 
@@ -25,8 +21,6 @@ This project is a sample implementation of a **multi-tool AI agent** built with 
 ├── requirements.txt
 └── README.md
 ```
-
----
 
 ## 🔧 Setup
 
@@ -43,20 +37,14 @@ source .venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
-
 ## 🔐 Google API Key
 
 Set your `GOOGLE_API_KEY` in a `.env` file before using the agent.  
 You can obtain the key from [Google AI Studio](https://makersuite.google.com/app).
 
----
-
 ## 📜 License
 
 MIT License. Feel free to fork and expand the agent!
-
----
 
 ## ✨ Future Ideas
 
