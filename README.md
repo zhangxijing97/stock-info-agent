@@ -45,9 +45,3 @@ You can obtain the key from [Google AI Studio](https://makersuite.google.com/app
 ## 📜 License
 
 MIT License. Feel free to fork and expand the agent!
-
-## ✨ Future Ideas
-
-- Add historical chart tool  
-- Predict future prices using LLM  
-- Integrate with a web frontend or API
