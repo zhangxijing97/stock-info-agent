@@ -2,6 +2,12 @@
 
 This project is a sample implementation of a **multi-tool AI agent** built with the [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/). It provides real-time stock information using [Yahoo Finance](https://pypi.org/project/yahoo-finance/) data via the `yfinance` Python library.
 
+# stock-info-agent
+
+This project is a sample implementation of a **multi-tool AI agent** built with the [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/). It provides real-time stock information using [Yahoo Finance](https://pypi.org/project/yahoo-finance/) data via the `yfinance` Python library.
+
+[![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/zhangxijing97/stock-info-agent)
+
 ## 🚀 Features
 
 - Get the **current stock price** of a company
@@ -9,6 +15,12 @@ This project is a sample implementation of a **multi-tool AI agent** built with 
 - Keeps a simple record of recent ticker lookups (in-memory)
 - Modular tool design with separate tool files
 - ADK-powered agent using `gemini-2.0-flash` LLM model
+
+## 📦 Requirements
+
+- Python 3.9+
+- [Google ADK](https://github.com/google/adk) >= 0.2.1
+- yfinance >= 0.2.37
 
 ## 🧱 Project Structure
 
@@ -31,7 +43,7 @@ cd stock-info-agent
 
 # Create a virtual environment (optional but recommended)
 python -m venv .venv 
-source .venv/bin/activate  # On Windows: venv\Scripts\activate
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -39,17 +51,17 @@ pip install -r requirements.txt
 
 ## 🔐 Google API Key
 
-Before running the agent, you need to create a `.env` file and set your `GOOGLE_API_KEY`.
+Before running the agent, you need to create a `.env` file in the project root directory and set your `GOOGLE_API_KEY`.
 
 You can obtain your key from [Google AI Studio](https://makersuite.google.com/app).
 
 ### 📝 Create the `.env` file
 
-Inside the `app/` directory, run the following commands in your terminal:
+Run the following commands in your terminal:
 
 ```bash
-echo "GOOGLE_GENAI_USE_VERTEXAI=0" > app/.env
-echo "GOOGLE_API_KEY=your_google_api_key_here" >> app/.env
+echo "GOOGLE_GENAI_USE_VERTEXAI=0" > .env
+echo "GOOGLE_API_KEY=your_google_api_key_here" >> .env
 ```
 
 ## ▶️ Run the Agent
@@ -74,11 +86,33 @@ Commands:
   web         Starts a FastAPI server with Web UI for agents.
 ```
 
-Example queries:
+## 📈 Example Usage
 
+Query:
 ```
-What is the current price of AAPL?  
+What is the current price of AAPL?
+```
+
+Response:
+```json
+{
+  "ticker": "AAPL",
+  "price": 189.77
+}
+```
+
+Query:
+```
 Tell me about the company behind MSFT.
+```
+
+Response:
+```json
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "sector": "Technology"
+}
 ```
 
 ## 📜 License
