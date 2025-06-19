@@ -50,6 +50,7 @@ Inside the `app/` directory, run the following commands in your terminal:
 ```bash
 echo "GOOGLE_GENAI_USE_VERTEXAI=0" > app/.env
 echo "GOOGLE_API_KEY=your_google_api_key_here" >> app/.env
+```
 
 ## ▶️ Run the Agent
 
