@@ -26,7 +26,7 @@ This project is a sample implementation of a **multi-tool AI agent** built with 
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/stock-info-agent.git
+git clone git@github.com:zhangxijing97/stock-info-agent.git
 cd stock-info-agent
 
 # Create a virtual environment (optional but recommended)
