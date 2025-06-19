@@ -2,10 +2,6 @@
 
 This project is a sample implementation of a **multi-tool AI agent** built with the [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/). It provides real-time stock information using [Yahoo Finance](https://pypi.org/project/yahoo-finance/) data via the `yfinance` Python library.
 
-# stock-info-agent
-
-This project is a sample implementation of a **multi-tool AI agent** built with the [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/). It provides real-time stock information using [Yahoo Finance](https://pypi.org/project/yahoo-finance/) data via the `yfinance` Python library.
-
 [![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/zhangxijing97/stock-info-agent)
 
 ## 🚀 Features
@@ -18,9 +14,9 @@ This project is a sample implementation of a **multi-tool AI agent** built with 
 
 ## 📦 Requirements
 
-- Python 3.9+
-- [Google ADK](https://github.com/google/adk) >= 0.2.1
-- yfinance >= 0.2.37
+- Python
+- Google ADK
+- yfinance
 
 ## 🧱 Project Structure
 
