@@ -57,7 +57,6 @@ echo "GOOGLE_API_KEY=your_google_api_key_here" >> app/.env
 Once setup is complete and you've added your API key in .env, you can start the agent:
 
 ```
-(.venv) (base) zhangxijing@MacBook-Air stock-info-agent-2 % adk --help
 Usage: adk [OPTIONS] COMMAND [ARGS]...
 
   Agent Development Kit CLI tools.
